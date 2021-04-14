@@ -12,8 +12,8 @@ const axios = require('axios');
 const awsAxios = require('aws4-axios');
 
 AWS.config.update({
-  accessKeyId: 'AKIAJI3Y5XWKQTDRL5HQ', 
-  secretAccessKey: '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', 
+  accessKeyId: '', 
+  secretAccessKey: '', 
   region: 'ap-southeast-1'
 });
 
@@ -22,8 +22,8 @@ const interceptor = awsAxios.aws4Interceptor(
     region: 'ap-southeast-1',
   },
   {
-    accessKeyId: 'AKIAJI3Y5XWKQTDRL5HQ',
-    secretAccessKey: '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',
+    accessKeyId: '',
+    secretAccessKey: '',
   }
 );
 
