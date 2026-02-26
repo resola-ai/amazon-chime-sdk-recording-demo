@@ -1,3 +1,8 @@
+> [!WARNING] **Repository archived**
+> This repository was automatically archived on **2026-02-26 15:39:30** UTC.
+> To request reactivation, contact the team in **#infra** or **#engineering** on Slack.
+> **Note:** Repositories archived for more than one year are subject to complete removal without further notice.
+
 ## Amazon Chime SDK recording demo
 
 This repository contains resources for building a demo application that records media from Amazon Chime SDK meeting sessions. Included is a Docker image and serverless AWS CloudFormation templates that you can deploy to your AWS Account. The Walkthrough will show you how to create a container using the Docker image and upload it to Amazon Elastic Container Registry (ECR), which is referenced by a Amazon Elastic Container Service (ECS) task. AWS CloudFormation templates orchestrate resources (including Amazon APIGateway, Amazon Lambda, and Amazon ECS) that run the recording demo application. When deployed, the startRecording API will enable "a bot" (i.e. a headless meeting attendee) to join an Amazon Chime SDK meeting session via a URL and record the meeting's audio, video and screen share in high definition (1080p at 30fps by default, but configurable) and stream output to a specified Amazon S3 bucket. The stopRecording API will stop the ECS task and complete the upload.
